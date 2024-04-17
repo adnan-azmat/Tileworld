@@ -16,6 +16,8 @@ import tileworld.TWGUI;
 import tileworld.agent.Message;
 import tileworld.agent.TeamAgent1;
 import tileworld.agent.TeamAgent2;
+import tileworld.agent.TeamAgent3;
+import tileworld.agent.TeamAgent4;
 import tileworld.agent.TWAgent;
 
 /**
@@ -107,24 +109,42 @@ public class TWEnvironment extends SimState implements Steppable {
 
         schedule.scheduleRepeating(this, 1, 1.0);
         
+        // //Now we create some agents
+        // pos1, pos2, pos3, pos4
+
+        // posM = 50,50
+
+        // pos1<pos3<pos4<pos2
+
+
+
+        // Int2D pos = this.generateRandomLocation();
+        // createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+        // pos = this.generateRandomLocation();
+        // createAgent(new TeamAgent2("agent2", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+
         //Now we create some agents
         Int2D pos = this.generateRandomLocation();
         createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+
         pos = this.generateRandomLocation();
         createAgent(new TeamAgent2("agent2", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
 
         pos = this.generateRandomLocation();
-        createAgent(new TeamAgent1("agent3", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+        createAgent(new TeamAgent3("agent3", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
         
         pos = this.generateRandomLocation();
-        createAgent(new TeamAgent1("agent4", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-
-        pos = this.generateRandomLocation();
-        createAgent(new TeamAgent2("agent5", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+        createAgent(new TeamAgent4("agent4", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
 
         // pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent2("agent6", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-        
+        // createAgent(new TeamAgent4("agent5", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+
+        // pos = this.generateRandomLocation();
+        // createAgent(new TeamAgent1("agent4", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
+
+
+        // pos = this.generateRandomLocation();
+        // createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel, 2));
 
         //create the fueling station
         pos = this.generateRandomLocation();

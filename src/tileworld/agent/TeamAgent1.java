@@ -943,25 +943,7 @@ public class TeamAgent1 extends TWAgent{
 
                 this.agentState1="FuelStationFinding";
 
-                //scheme 2
-                if (mapsizeX != mapsizeY || togetherStep <= Math.min(thisToLeft,thisToRight)/2+Math.min(thisToDown,thisToUp)/2+
-                        Math.min(thatToUp,thatToDown)/2+Math.min(thatToRight,thatToLeft)/2) {
-                    double bothX = this.getX()/2 + otherAgentPosition[0]/2;
-                    double bothY = this.getY()/2 + otherAgentPosition[1]/2;
-                    double curmin = 9999.0;
-                    int lastIndex = 0;
-                    for (int index = 0; index < mapChain.size(); index++) {
-                        double curpoint = Math.abs(mapChain.get(index)[0] - bothX) + Math.abs(mapChain.get(index)[1] - bothY);
-                        if (curmin > curpoint){
-                            curmin = curpoint;
-                            lastIndex = index;
-                        }
-                    }
-                    this.addTempMessage("GoToFindFuelStation 9 " + lastIndex);
-                    this.agentState2=0;
-                    this.agentState3=lastIndex;
-                    // scheme 1
-                } else if (thisToLeft >= thisToRight){
+                if (thisToLeft >= thisToRight){
                     if (thisToUp >= thisToDown){
                         if (thatToLeft >= thatToRight){
                             if (thatToUp >= thatToDown){
