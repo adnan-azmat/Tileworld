@@ -33,21 +33,12 @@ public class SimpleTWAgent extends TWAgent{
         System.out.println("Simple Score: " + this.score);
         return new TWThought(TWAction.MOVE,getRandomDirection());
     }
-
+    
     @Override
     protected void act(TWThought thought) {
-
-        //You can do:
-        //move(thought.getDirection())
-        //pickUpTile(Tile)
-        //putTileInHole(Hole)
-        //refuel()
-
         try {
             this.move(thought.getDirection());
         } catch (CellBlockedException ex) {
-
-           // Cell is blocked, replan?
         }
     }
 

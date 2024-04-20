@@ -28,6 +28,7 @@ public class TileworldMain {
 	public static void main(String args[]) throws InterruptedException {
 		int overallScore = 0; 
 		int iteration = 10;
+        int[] rewards = new int[iteration];
 		for(int i = 0; i<iteration; i++) {
 			int seed = ThreadLocalRandom.current().nextInt(1, Integer.MAX_VALUE);
 			System.out.println("Seed: "+seed);
@@ -43,11 +44,31 @@ public class TileworldMain {
 				steps = tw.schedule.getSteps();
 			}
 			System.out.println("The final reward is: "+tw.getReward());
+            rewards[i] = tw.getReward();
 			overallScore+=tw.getReward();
 			tw.finish();
 			TimeUnit.SECONDS.sleep(1);
 		}
+        for(int i = 0; i<iteration; i++) {
+            System.out.println("Reward "+i+": "+rewards[i]);
+        }
+        
 		System.out.println("The average reward is: "+((float)overallScore/iteration));
+
+        // print min, max in rewards
+        int min = rewards[0];
+        int max = rewards[0];
+        for(int i = 1; i<iteration; i++) {
+            if(rewards[i] < min) {
+                min = rewards[i];
+            }
+            if(rewards[i] > max) {
+                max = rewards[i];
+            }
+        }
+        System.out.println("The min reward is: "+min);
+        System.out.println("The max reward is: "+max);
+
 		System.exit(0);  // make sure any threads finish up
     }
 

@@ -109,24 +109,9 @@ public class TWEnvironment extends SimState implements Steppable {
 
         schedule.scheduleRepeating(this, 1, 1.0);
         
-        // //Now we create some agents
-        // pos1, pos2, pos3, pos4
-
-        // posM = 50,50
-
-        // pos1<pos3<pos4<pos2
-
-
-
-        // Int2D pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-        // pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent2("agent2", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-
         //Now we create some agents
         Int2D pos = this.generateRandomLocation();
         createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-
         pos = this.generateRandomLocation();
         createAgent(new TeamAgent2("agent2", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
 
@@ -136,15 +121,8 @@ public class TWEnvironment extends SimState implements Steppable {
         pos = this.generateRandomLocation();
         createAgent(new TeamAgent4("agent4", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
 
-        // pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent4("agent5", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-
-        // pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent1("agent4", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
-
-
-        // pos = this.generateRandomLocation();
-        // createAgent(new TeamAgent1("agent1", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel, 2));
+        pos = this.generateRandomLocation();
+        createAgent(new TeamAgent4("agent5", pos.getX(), pos.getY(), this, Parameters.defaultFuelLevel));
 
         //create the fueling station
         pos = this.generateRandomLocation();
