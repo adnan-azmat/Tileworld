@@ -56,5 +56,5 @@ The results obtained by different approaches are as follows:
 | More agents (5 agents)                               |    Env2     |     699     |
 | 5 agents w/ Improved Fuel Station Finding Strategy   |    Env2     |     **791.6**     |
 
-<p>Table 2: Results on Env2</p>
+<p>Table 3: Results on Env2</p>
 
