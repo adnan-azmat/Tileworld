@@ -41,16 +41,16 @@ We ran 10 experiments on each of the environment summarised in the table below.
 
 The results obtained by different approaches are as follows:
 
-| Agent plan                                           | Env Setting |     Reward    |
+| Agents plan                                           | Env Setting |     Reward    |
 | :--------:                                           | :---------: | :-----------: |
 | Baseline (2 agents)                                  |    Env1     |     320.3     |
-| More agents (5 agents)                               |    Env1     |     522.3     |
-| 5 agents w/ Improved Fuel Station Finding Strategy   |    Env1     |     **521.8**     |
+| More agents (5 agents)                               |    Env1     |     **522.3**     |
+| 5 agents w/ Improved Fuel Station Finding Strategy   |    Env1     |     521.8     |
 
 <p>Table 2: Results on Env1</p>
 
 
-| Agent plan                                           | Env Setting |     Reward    |
+| Agents plan                                           | Env Setting |     Reward    |
 | :--------:                                           | :---------: | :-----------: |
 | Baseline (2 agents)                                  |    Env2     |     345.5     |
 | More agents (5 agents)                               |    Env2     |     699     |
