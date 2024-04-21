@@ -60,3 +60,4 @@ The results obtained by different approaches are as follows:
 
 <p>Table 3: Results on Env2</p>
 
+The nn_approach directory has the Neural Network Approach for the Tileworld environment which is pending due to few bugs and resource constraints.
