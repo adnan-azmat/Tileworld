@@ -16,7 +16,7 @@ package tileworld;
  */
 public class Parameters {
 
-//	// search fuel station for agent
+//search fuel station for agent
 //    public static int numAgent = 4;
 //	
 //    //Simulation Parameters
