@@ -60,6 +60,11 @@ The results obtained by different approaches are as follows:
 
 <p>Table 3: Results on Env2</p>
 
+## Running the Simulation
+
+- Execute src/tileworld/TileworldMain.java to run the environment on Improved Fuel Station Finding Strategy with the parameters set in src/tileworld/Parameters.java file.
+- Execute src/tileworld/TWGUI.java to run the simulation in an interactive GUI window.
+
 ## Folder Structure
 The home folder has code for Adaptive Control Approach (whose results are shown above).
 The greedy_approach directory has code for the greedy approach.
