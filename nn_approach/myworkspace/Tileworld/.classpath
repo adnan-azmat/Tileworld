@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="../../dependencies/MASON_14.jar"/>
+	<classpathentry kind="lib" path="../../java3d-1_5_1-macosx/lib/ext/j3dcore.jar"/>
+	<classpathentry kind="lib" path="../../java3d-1_5_1-macosx/lib/ext/j3dutils.jar"/>
+	<classpathentry kind="lib" path="../../java3d-1_5_1-macosx/lib/ext/vecmath.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/api-0.27.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/basicdataset-0.27.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/commons-codec-1.16.1.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/commons-compress-1.26.1.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/commons-csv-1.10.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/commons-io-2.15.1.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/jna-5.14.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/logback-classic-1.2.11.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/logback-core-1.2.11.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/model-zoo-0.27.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/pytorch-engine-0.27.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/pytorch-model-zoo-0.27.0.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="../../ml_dependencies/target/dependency/slf4j-simple-2.0.13.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
