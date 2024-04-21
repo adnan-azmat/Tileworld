@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/adnanazmat/Downloads/MASON_14.jar"/>
+	<classpathentry kind="src" path="greedy_approach"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
