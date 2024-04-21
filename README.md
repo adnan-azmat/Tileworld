@@ -16,6 +16,8 @@ We expanded the number of agents from 2 to 5, adding an additional team of 2 age
 
 ### Improved Fuel Finding Strategy
 
+During experiments we observed that as we increased the size of the grid, there were iterations with very small or zero rewards. On closer inspection, it was deduced that the reason for low rewards is that the agents cannot find the fuel stations in some cases. So, we focused on maximising the probability of the fuel station being found.
+
 To address issues with agents getting stuck or dying due to fuel exhaustion, particularly in larger grids, we improved the fuel finding strategy. The changes are as follows:
 
 - The two agent teams (each with two agents) are assigned zones based on their spawn location.
